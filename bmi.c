@@ -22,17 +22,5 @@ printf(
 		   "25.0 a 29.9  | Sobrepeso\n"
 		   ">=30         | Obesidad\n"
 		   );
-
-    printf("\nSu condicion es: ");
-    if (BMI < 18.5) {
-        printf("Bajo peso\n");
-    } else if (BMI >= 18.5 && BMI <= 24.9) {
-        printf("Normal\n");
-    } else if (BMI >= 25.0 && BMI <= 29.9) {
-        printf("Sobrepeso\n");
-    } else {
-        printf("Obesidad\n");
-    }
-    
     return 0;
 }
