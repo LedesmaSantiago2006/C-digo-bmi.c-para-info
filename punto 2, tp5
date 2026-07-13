@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void) {
+    // =========================================================================
+    // REPOSITORIO:
+    // =========================================================================
+    
+    float altura;
+    float peso;
+    float BMI;
+
+    // Validación para la altura
+    do {
+        printf("Ingrese aqui su altura\n");
+        scanf("%f", &altura);
+        if (altura < 0) {
+            printf("Error: No se permiten numeros negativos. Intente de nuevo.\n");
+        }
+    } while (altura < 0);
+
+    // Validación para el peso
+    do {
+        printf("ingrese su peso aqui\n");
+        scanf("%f", &peso);
+        if (peso < 0) {
+            printf("Error: No se permiten numeros negativos. Intente de nuevo.\n");
+        }
+    } while (peso < 0);
+
+    // Cálculo del BMI
+    BMI = peso / (altura * altura);
+
+    printf("Tu indice de masa corporal es de: %2.1f \n", BMI);
+    printf("puede comparar su resultado con el siguiente cuadro\n\n");
+    printf(
+        "Indice      | Condicion\n"
+        "-----------------------\n"
+        "<18.5       | Bajo peso\n"
+        "18.5 a 24.9 | Normal\n"
+        "25.0 a 29.9 | Sobrepeso\n"
+        ">=30        | Obesidad\n"
+    );
+
+    return 0;
+}
