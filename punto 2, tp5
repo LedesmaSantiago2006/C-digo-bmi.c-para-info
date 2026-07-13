@@ -2,7 +2,7 @@
 
 int main(void) {
     // =========================================================================
-    // REPOSITORIO:
+    // REPOSITORIO:https://github.com/LedesmaSantiago2006/C-digo-bmi.c-para-info.git
     // =========================================================================
     
     float altura;
